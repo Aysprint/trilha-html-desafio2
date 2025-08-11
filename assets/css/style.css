@@ -12,15 +12,28 @@ a { color:blue; text-decoration: none;}
     border-bottom: solid 1px #cdcdcd;
 }
 .content {
+    display: grid;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(0, 15rem);
+    gap: 3rem;
     max-width: 1440px;
     margin: auto;
-    grid-gap: 3rem;
-    display: grid;
-    gap: 3rem;
-    grid-template-areas: "sidebar main anchors";
-    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
     padding-left: 1rem;
     padding-right: 1rem;
+}
+.sidebar {
+    grid-area: sidebar;
+    border-right: solid 1px #cdcdcd;
+    padding-right: 1rem;
+}
+.main {
+    grid-area: main;
+    padding: 0 1rem;
+}
+.anchors {
+    grid-area: anchors;
+    border-left: solid 1px #cdcdcd;
+    padding-left: 1rem;
 }
 .footer {
     min-height: 100px;
