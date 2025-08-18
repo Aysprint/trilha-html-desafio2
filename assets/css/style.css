@@ -54,10 +54,13 @@ figure {
 }
 
 .btn_voltar {
-    background-color: #a7a7a7;
+    background-color: #c5c5c57a;
     transition: background-color 0.3s ease;
     padding: 5px 10px;
     border-radius: 5px;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
 }
 
 .btn_voltar:hover {
